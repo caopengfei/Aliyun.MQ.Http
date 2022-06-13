@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<IsPackable>true</IsPackable>
+		<PackageId>Aliyun.MQ.Http</PackageId>
+		<Version>1.0.3.2</Version>
+		<Authors>随风</Authors>
+		<Description>由于阿里云官方提供的Aliyun.MQ包仅支持.NET Core 2.1+，此包修改为支持.NETStandard 2.1+</Description>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Remove="Properties\launchSettings.json" />
+		<Content Remove="log4net.config" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Remove="README.tt" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="log4net.config" />
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="Model\exp\" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Remove="Properties\AssemblyInfo.cs" />
+		<Compile Remove="README.cs" />
+	</ItemGroup>
+</Project>

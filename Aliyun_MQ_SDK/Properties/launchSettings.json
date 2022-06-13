@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Aliyun_MQ_SDK": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:12460;http://localhost:12461"
+    }
+  }
+}
